@@ -1,0 +1,16 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+xgboost
+lightgbm
+tensorflow
+keras
+joblib
+shap
+geopy
+category_encoders
+jinja2
+streamlit
+python-dotenv

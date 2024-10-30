@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rapport Automatisé de Performance des Modèles</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h1, h2, h3 { color: #333; }
+        table { width: 60%; border-collapse: collapse; margin-bottom: 40px; }
+        th, td { border: 1px solid #ccc; padding: 12px; text-align: center; }
+        th { background-color: #f4f4f4; }
+        img { max-width: 100%; height: auto; margin-bottom: 40px; }
+        .section { margin-bottom: 60px; }
+    </style>
+</head>
+<body>
+    <h1>Rapport Automatisé de Performance des Modèles</h1>
+
+    <!-- Section 1: RMSE Scores -->
+    <div class="section">
+        <h2>1. Scores RMSE</h2>
+        <table>
+            <tr>
+                <th>Modèle</th>
+                <th>RMSE</th>
+            </tr>
+            
+            <tr>
+                <td>Linéaire</td>
+                <td>1.8928</td>
+            </tr>
+            
+            <tr>
+                <td>Arbre de Décision</td>
+                <td>1.6156</td>
+            </tr>
+            
+            <tr>
+                <td>Forêt Aléatoire</td>
+                <td>1.6138</td>
+            </tr>
+            
+            <tr>
+                <td>Gradient Boosting</td>
+                <td>1.5979</td>
+            </tr>
+            
+            <tr>
+                <td>Extra Trees</td>
+                <td>1.6083</td>
+            </tr>
+            
+            <tr>
+                <td>XGBoost</td>
+                <td>1.5933</td>
+            </tr>
+            
+            <tr>
+                <td>LightGBM</td>
+                <td>1.5890</td>
+            </tr>
+            
+            <tr>
+                <td>MLP</td>
+                <td>1.6164</td>
+            </tr>
+            
+            <tr>
+                <td>DNN</td>
+                <td>1.6254</td>
+            </tr>
+            
+            <tr>
+                <td>Ensemble</td>
+                <td>1.5945</td>
+            </tr>
+            
+        </table>
+    </div>
+
+    <!-- Section 2: Prédictions vs Prix Réels -->
+    <div class="section">
+        <h2>2. Prédictions vs Prix Réels</h2>
+        
+            <h3>Prédictions Linéaires vs Réels</h3>
+            <p><strong>Prédictions Linéaires</strong></p>
+            
+                <img src="C:/Users/33766/models/plots\Linear_predictions.png" alt="Linear Predictions">
+            
+        
+            <h3>Prédictions Arbre de Décision vs Réels</h3>
+            <p><strong>Prédictions Arbre de Décision</strong></p>
+            
+                <img src="C:/Users/33766/models/plots\DecisionTree_predictions.png" alt="DecisionTree Predictions">
+            
+        
+            <h3>Prédictions Forêt Aléatoire vs Réels</h3>
+            <p><strong>Prédictions Forêt Aléatoire</strong></p>
+            
+                <img src="C:/Users/33766/models/plots\RandomForest_predictions.png" alt="RandomForest Predictions">
+            
+        
+            <h3>Prédictions Gradient Boosting vs Réels</h3>
+            <p><strong>Prédictions Gradient Boosting</strong></p>
+            
+                <img src="C:/Users/33766/models/plots\GradientBoosting_predictions.png" alt="GradientBoosting Predictions">
+            
+        
+            <h3>Prédictions Extra Trees vs Réels</h3>
+            <p><strong>Prédictions Extra Trees</strong></p>
+            
+                <img src="C:/Users/33766/models/plots\ExtraTrees_predictions.png" alt="ExtraTrees Predictions">
+            
+        
+            <h3>Prédictions XGBoost vs Réels</h3>
+            <p><strong>Prédictions XGBoost</strong></p>
+            
+                <img src="C:/Users/33766/models/plots\XGBoost_predictions.png" alt="XGBoost Predictions">
+            
+        
+            <h3>Prédictions LightGBM vs Réels</h3>
+            <p><strong>Prédictions LightGBM</strong></p>
+            
+                <img src="C:/Users/33766/models/plots\LightGBM_predictions.png" alt="LightGBM Predictions">
+            
+        
+            <h3>Prédictions MLP vs Réels</h3>
+            <p><strong>MLP Predictions</strong></p>
+            
+                <img src="C:/Users/33766/models/plots\MLP_predictions.png" alt="MLP Predictions">
+            
+        
+            <h3>Prédictions DNN vs Réels</h3>
+            <p><strong>DNN Predictions</strong></p>
+            
+                <img src="C:/Users/33766/models/plots\DNN_predictions.png" alt="DNN Predictions">
+            
+        
+            <h3>Prédictions Ensemble vs Réels</h3>
+            <p><strong>Prédictions Ensemble</strong></p>
+            
+                <img src="C:/Users/33766/models/plots\Ensemble_predictions.png" alt="Ensemble Predictions">
+            
+        
+    </div>
+
+    <!-- Section 3: Distribution des Résidus -->
+    <div class="section">
+        <h2>3. Distribution des Résidus</h2>
+        
+            <h3>Résidus Linéaires</h3>
+            <p><strong>Résidus Linéaires</strong></p>
+            
+                <img src="C:/Users/33766/models/plots\Linear_residuals.png" alt="Linear Residuals">
+            
+        
+            <h3>Résidus Arbre de Décision</h3>
+            <p><strong>Résidus Arbre de Décision</strong></p>
+            
+                <img src="C:/Users/33766/models/plots\DecisionTree_residuals.png" alt="DecisionTree Residuals">
+            
+        
+            <h3>Résidus Forêt Aléatoire</h3>
+            <p><strong>Résidus Forêt Aléatoire</strong></p>
+            
+                <img src="C:/Users/33766/models/plots\RandomForest_residuals.png" alt="RandomForest Residuals">
+            
+        
+            <h3>Résidus Gradient Boosting</h3>
+            <p><strong>Résidus Gradient Boosting</strong></p>
+            
+                <img src="C:/Users/33766/models/plots\GradientBoosting_residuals.png" alt="GradientBoosting Residuals">
+            
+        
+            <h3>Résidus Extra Trees</h3>
+            <p><strong>Résidus Extra Trees</strong></p>
+            
+                <img src="C:/Users/33766/models/plots\ExtraTrees_residuals.png" alt="ExtraTrees Residuals">
+            
+        
+            <h3>Résidus XGBoost</h3>
+            <p><strong>Résidus XGBoost</strong></p>
+            
+                <img src="C:/Users/33766/models/plots\XGBoost_residuals.png" alt="XGBoost Residuals">
+            
+        
+            <h3>Résidus LightGBM</h3>
+            <p><strong>Résidus LightGBM</strong></p>
+            
+                <img src="C:/Users/33766/models/plots\LightGBM_residuals.png" alt="LightGBM Residuals">
+            
+        
+            <h3>Résidus MLP</h3>
+            <p><strong>Résidus MLP</strong></p>
+            
+                <img src="C:/Users/33766/models/plots\MLP_residuals.png" alt="MLP Residuals">
+            
+        
+            <h3>Résidus DNN</h3>
+            <p><strong>Résidus DNN</strong></p>
+            
+                <img src="C:/Users/33766/models/plots\DNN_residuals.png" alt="DNN Residuals">
+            
+        
+            <h3>Résidus Ensemble</h3>
+            <p><strong>Résidus Ensemble</strong></p>
+            
+                <img src="C:/Users/33766/models/plots\Ensemble_residuals.png" alt="Ensemble Residuals">
+            
+        
+    </div>
+
+    <!-- Section 4: Importances des Caractéristiques -->
+    <div class="section">
+        <h2>4. Importances des Caractéristiques</h2>
+        
+            <h3>Importances des Caractéristiques Linéaires</h3>
+            
+                <img src="C:/Users/33766/models/plots\Linear_feature_importance.png" alt="Linear Feature Importance">
+            
+        
+            <h3>Importances des Caractéristiques Arbre de Décision</h3>
+            
+                <img src="C:/Users/33766/models/plots\DecisionTree_feature_importance.png" alt="DecisionTree Feature Importance">
+            
+        
+            <h3>Importances des Caractéristiques Forêt Aléatoire</h3>
+            
+                <img src="C:/Users/33766/models/plots\RandomForest_feature_importance.png" alt="RandomForest Feature Importance">
+            
+        
+            <h3>Importances des Caractéristiques Gradient Boosting</h3>
+            
+                <img src="C:/Users/33766/models/plots\GradientBoosting_feature_importance.png" alt="GradientBoosting Feature Importance">
+            
+        
+            <h3>Importances des Caractéristiques Extra Trees</h3>
+            
+                <img src="C:/Users/33766/models/plots\ExtraTrees_feature_importance.png" alt="ExtraTrees Feature Importance">
+            
+        
+            <h3>Importances des Caractéristiques XGBoost</h3>
+            
+                <img src="C:/Users/33766/models/plots\XGBoost_feature_importance.png" alt="XGBoost Feature Importance">
+            
+        
+            <h3>Importances des Caractéristiques LightGBM</h3>
+            
+                <img src="C:/Users/33766/models/plots\LightGBM_feature_importance.png" alt="LightGBM Feature Importance">
+            
+        
+            <h3>Importances des Caractéristiques MLP</h3>
+            
+                <p><em>Aucune importance des caractéristiques disponible pour MLP</em></p>
+            
+        
+            <h3>Importances des Caractéristiques DNN</h3>
+            
+                <p><em>Aucune importance des caractéristiques disponible pour DNN</em></p>
+            
+        
+            <h3>Importances des Caractéristiques Ensemble</h3>
+            
+                <p><em>Aucune importance des caractéristiques disponible pour Ensemble</em></p>
+            
+        
+    </div>
+</body>
+</html>
